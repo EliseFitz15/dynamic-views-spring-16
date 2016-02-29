@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+  </head>
+  <body>
+    <h2>Things To Do Today</h2>
+
+    <ul>
+      <% @to_dos_list.each do |task| %>
+      <li>
+        <a href="todos/<%= task.name %>"> <%= task.name %></a>
+      </li>
+      <% end %>
+    </ul>
+
+  </body>
+</html>
